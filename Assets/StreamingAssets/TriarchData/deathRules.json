@@ -1,0 +1,22 @@
+{
+  "rules": [
+    {
+      "riskTier": "SAFE",
+      "lootDropMode": "NONE",
+      "goldDropPct": 0,
+      "protectEquipped": true
+    },
+    {
+      "riskTier": "CONTESTED",
+      "lootDropMode": "PARTIAL",
+      "goldDropPct": 10,
+      "protectEquipped": true
+    },
+    {
+      "riskTier": "HIGH_RISK",
+      "lootDropMode": "FULL",
+      "goldDropPct": 50,
+      "protectEquipped": false
+    }
+  ]
+}

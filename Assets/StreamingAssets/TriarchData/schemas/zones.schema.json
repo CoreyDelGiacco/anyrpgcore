@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["zones"],
+  "properties": {
+    "zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "riskTier"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "riskTier": {
+            "type": "string",
+            "enum": ["SAFE", "CONTESTED", "HIGH_RISK"]
+          }
+        }
+      }
+    }
+  }
+}

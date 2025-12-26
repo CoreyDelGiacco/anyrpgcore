@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["rules"],
+  "properties": {
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["riskTier", "lootDropMode", "goldDropPct", "protectEquipped"],
+        "properties": {
+          "riskTier": {
+            "type": "string",
+            "enum": ["SAFE", "CONTESTED", "HIGH_RISK"]
+          },
+          "lootDropMode": {
+            "type": "string",
+            "enum": ["NONE", "PARTIAL", "FULL"]
+          },
+          "goldDropPct": { "type": "number" },
+          "protectEquipped": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

@@ -79,3 +79,16 @@ From the welcome window you can easily
 * Find and open the included sample games
 * Launch the New Game Wizard to setup your own game
 * Find and open online support resources to get in depth help and information about using AnyRPG
+
+## Triarch Vertical Slice (Step 2)
+
+Triarch adds data-driven zone and death rule loading on startup. Data lives in `/data` and is mirrored to `Assets/StreamingAssets/TriarchData`.
+
+Quickstart:
+1. Open the project in Unity 2021.3.28f1.
+2. Run `Tools > Triarch > Sync Data to StreamingAssets` to copy `/data` into `Assets/StreamingAssets/TriarchData`.
+3. Create an empty GameObject and add `TriarchDataBootstrap`, `TriarchZoneService`, and `TriarchDeathService`.
+4. Add a `TriarchPlayer` + `TriarchInventory` to your test player.
+5. Add `TriarchZoneVolume` triggers in the scene and set their `zoneId` to `sanctum`, `frontier`, or `shatterwilds`.
+6. Add `TriarchDebugUI` to any GameObject to see the current zone/risk and the “Kill Me” button.
+7. Play the scene; entering zones updates risk tier and the debug kill button applies the zone death rule.
