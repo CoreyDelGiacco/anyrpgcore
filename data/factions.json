@@ -1,0 +1,16 @@
+{
+  "factions": [
+    {
+      "id": "iron_covenant",
+      "name": "Iron Covenant"
+    },
+    {
+      "id": "verdant_reach",
+      "name": "Verdant Reach"
+    },
+    {
+      "id": "abyssal_remnant",
+      "name": "Abyssal Remnant"
+    }
+  ]
+}

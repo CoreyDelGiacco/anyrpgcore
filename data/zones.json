@@ -1,0 +1,19 @@
+{
+  "zones": [
+    {
+      "id": "sanctum",
+      "name": "Sanctum",
+      "riskTier": "SAFE"
+    },
+    {
+      "id": "frontier",
+      "name": "Frontier",
+      "riskTier": "CONTESTED"
+    },
+    {
+      "id": "shatterwilds",
+      "name": "Shatterwilds",
+      "riskTier": "HIGH_RISK"
+    }
+  ]
+}
